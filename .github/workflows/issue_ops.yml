@@ -32,7 +32,7 @@ jobs:
       - name: Install Valet CLI
         shell: bash
         run: |
-          gh extension install github/gh-valet
+          gh extension install sreeni2107/gh-valet
           gh valet update --username ${{ secrets.valet_ghcr_username }} --password ${{ secrets.valet_ghcr_password }}
         env:
           GITHUB_TOKEN: ${{ secrets.valet_ghcr_password }}
